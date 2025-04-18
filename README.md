@@ -1,5 +1,5 @@
 # Government-Funding-Graph
-
+![Government Funding Graph](https://github.com/lewisExternal/Government-Funding-Graph/blob/main/img/graph.gif)
 Graph visualisation for UK Research and Innovation (UKRI) funding, including Networkx, Pyvis, and queryable via LlamaIndex graph RAG implementation. A working demo can be seen below. 
 
 The inspiration for this project came from a desire to make better tooling for grant writing, namely to suggest research topics, funding bodies, research institutions, and researchers. I have made Innovate UK grant applications in the past, so I have had an interest in the government funding landscape for some time. 
@@ -11,6 +11,8 @@ I have used NetworkX & PyVis for the graph visualisation of UKRI API data. Then,
 
 If you are interested in more projects like this, there is a sign up form that you can use to subscribe to our [mailing list](https://docs.google.com/forms/d/e/1FAIpQLScMwyRLHUwc_qTqCPndJCudVQCn0zQl4upcHmqj26ZG5akl4g/viewform).
 
+
+![Government Funding Graph](https://github.com/lewisExternal/Government-Funding-Graph/blob/main/img/graph_1.png)
 
 ## What is UKRI?
 UK Research and Innovation is a non-departmental public body sponsored by the Department for Science, Innovation and Technology (DSIT) that allocates funding for research and development. Generally, funding is awarded to research institutions and businesses.

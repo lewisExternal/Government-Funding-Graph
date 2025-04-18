@@ -407,7 +407,7 @@ def convert_graph(graph):
         font_color="white",
         directed=True,
     )
-    net.barnes_hut() 
+    net.barnes_hut()
     net.from_nx(graph)
     return net
 
