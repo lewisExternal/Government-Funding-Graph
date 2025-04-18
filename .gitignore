@@ -160,7 +160,6 @@ cython_debug/
 #.idea/
 
 
-output/
 .venv/
 __init__.py
 doc_store/
