@@ -1,0 +1,18 @@
+@startuml
+actor       User        as User
+participant Application as Application
+participant LLM         as LLM
+participant "Embedding Model" as EmbeddingModel 
+database    Graph    as Graph
+
+User -> Application: Question e.g. "What is Lewis's job?"
+Application -> LLM: Question e.g. "What is Lewis's job?"
+LLM -> Application: Entities e.g. "Lewis"
+Application -> EmbeddingModel: Question e.g. "What is Lewis's job?"
+EmbeddingModel -> Application: Embeddings e.g. [0.1548, 0.4848, ..., 1.864]
+Application -> Graph: Entities + Embeddings e.g. "Lewis" [0.1548, 0.4848, ..., 1.864]
+Graph -> Application: Context e.g. "job -> data scientist. lives in -> UK"
+Application -> LLM: Question + Context e.g. "What is Lewis's job? Context: job -> data scientist. lives in -> UK"
+LLM -> Application: Answer e.g. "Lewis is a data scientist"
+Application -> User: Answer e.g. "Lewis is a data scientist"
+@enduml
