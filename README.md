@@ -56,7 +56,7 @@ Streamlit is a lightweight Python web framework we will use to create the web ap
 
 ## Medium Article  
 
-You can read the accompanying Medium article here for additional context.  
+You can read the accompanying Medium article [here](https://medium.com/data-science-collective/government-funding-graph-fad0e59cfb04) for additional context.  
 
 ## Live Demo  
 To see the hosted solution on Streamlit cloud, please navigate to the link below:
