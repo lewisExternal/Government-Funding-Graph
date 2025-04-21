@@ -44,13 +44,15 @@ def main():
                     graph_ui, graph_rag = st.tabs(["Render graph", "Graph RAG"])
                     with graph_ui:
                         if st.button("Render graph"):
-                            ukri_utils.render_graphs(net)
+                            with st.spinner("Rendering graph, please wait"):
+                                ukri_utils.render_graphs(net)
                     with graph_rag:
                         ui_utils.render_graph_rag_interface(graph)
                         ui_utils.render_chat_results()
             else:
                 if st.button("Render graph"):
-                    ukri_utils.render_graphs(net)
+                    with st.spinner("Rendering graph, please wait"):
+                        ukri_utils.render_graphs(net)
 
     with tab2:
         st.components.v1.iframe(
