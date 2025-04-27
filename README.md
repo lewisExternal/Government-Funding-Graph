@@ -54,9 +54,8 @@ Streamlit is a lightweight Python web framework we will use to create the web ap
 
 "Streamlit is an open-source Python framework for data scientists and AI/ML engineers to deliver dynamic data apps with only a few lines of code. Build and deploy powerful data apps in minutes." - [Streamlit website](https://docs.streamlit.io/)
 
-## Medium Article  
-
-You can read the accompanying Medium article [here](https://medium.com/data-science-collective/government-funding-graph-fad0e59cfb04) for additional context.  
+## Towards Data Science Article  
+You can read the accompanying Towards Data Science article [here](https://towardsdatascience.com/government-funding-graph-rag/) for additional context.  
 
 ## Live Demo  
 To see the hosted solution on Streamlit cloud, please navigate to the link below:
