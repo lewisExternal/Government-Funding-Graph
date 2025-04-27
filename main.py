@@ -17,7 +17,7 @@ def main():
     """
     st.title("[UK Research and Innovation Funding (UKRI) Graph](https://www.ukri.org/)")
 
-    tab1, tab2, tab3 = st.tabs(["Graph Data", "Sign Up", "Disclaimer"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Graph Data", "Sign Up", "Disclaimer", "Article"])
 
     with tab1:
         with st.form("search_projects_form"):
@@ -69,6 +69,12 @@ def main():
             The developer shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of or inability to use this software,
             even if advised of the possibility of such damages.
             Your use of this software is at your own risk.
+            """
+        )
+    with tab4:
+        st.write(
+            """
+            You can read the accompanying Towards Data Science article [here](https://towardsdatascience.com/government-funding-graph-rag/) for additional context.
             """
         )
 
