@@ -15,7 +15,9 @@ def main():
     """
     Main function for rendering the UI of the streamlit application.
     """
-    st.title("[UK Research and Innovation Funding (UKRI) Graph](https://www.ukri.org/)")
+    st.title(
+        "[UK Research and Innovation Funding (UKRI) Graph Retrieval-Augmented Generation (RAG)](https://www.ukri.org/)"
+    )
 
     tab1, tab2, tab3, tab4 = st.tabs(["Graph Data", "Sign Up", "Disclaimer", "Article"])
 
