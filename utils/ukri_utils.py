@@ -178,15 +178,18 @@ def render_graphs(net):
     """
     Helper to render graph visualization from pyvis graph.
     """
-    uuid4 = uuid.uuid4()
-    file_name = f"./output/{uuid4}.html"
-    with contextlib.suppress(FileNotFoundError):
+    try:
+        uuid4 = uuid.uuid4()
+        file_name = f"./output/{uuid4}.html"
+        with contextlib.suppress(FileNotFoundError):
+            os.remove(file_name)
+        net.save_graph(file_name)
+        with open(file_name, "r", encoding="utf-8") as html_file:
+            source_code = html_file.read()
+        st.components.v1.html(source_code, height=650, width=650)
         os.remove(file_name)
-    net.save_graph(file_name)
-    with open(file_name, "r", encoding="utf-8") as html_file:
-        source_code = html_file.read()
-    st.components.v1.html(source_code, height=650, width=650)
-    os.remove(file_name)
+    except Exception as error:
+        logging.exception("ERROR render_graphs: %s", error)
 
 
 def set_networkx_attribute(graph, node_label, attribute_name, value):
