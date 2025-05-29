@@ -52,6 +52,10 @@ def main():
                         ui_utils.render_graph_rag_interface(graph)
                         ui_utils.render_chat_results()
             else:
+                st.warning(
+                    "If the graph fails to load - try filtering the results, it seems Streamlit Community Cloud have recently restricted message size.",
+                    icon="⚠️",
+                )
                 if st.button("Render graph"):
                     with st.spinner("Rendering graph, please wait"):
                         ukri_utils.render_graphs(net)
